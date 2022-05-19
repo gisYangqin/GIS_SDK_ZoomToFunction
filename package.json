@@ -1,0 +1,43 @@
+{
+  "name": "gis-sdk",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && npm run copy && vite build",
+    "copy": "ncp ./node_modules/@arcgis/core/assets ./public/assets",
+    "preview": "vite preview",
+    "lint": "eslint ./src/**/*.{js,jsx,vue,ts} --fix"
+  },
+  "dependencies": {
+    "@arcgis/core": "^4.23.7",
+    "ant-design-vue": "^3.2.2",
+    "less": "^4.1.2",
+    "less-loader": "^4.1.0",
+    "ts-loader": "^9.2.9",
+    "tslib": "^2.4.0",
+    "unplugin-vue-components": "^0.19.3",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.14",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.27",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "eslint": "^8.14.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-typescript": "^0.14.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "typescript": "^4.6.3",
+    "typescript-eslint-parser": "^22.0.0",
+    "vite": "^2.9.5",
+    "vite-plugin-eslint": "^1.6.0",
+    "vue-tsc": "^0.34.7"
+  }
+}

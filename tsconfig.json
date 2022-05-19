@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+
+    // "useDefineForClassFields": true,
+    // "isolatedModules": true,
+    // "noImplicitAny": true,
+    "preserveConstEnums": true,
+    // "importHelpers": true,
+    // "suppressImplicitAnyIndexErrors": true,
+
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "moduleResolution": "Node",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "jsx": "react",
+    "jsxFactory": "tsx",
+    // "skipLibCheck": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "tslib": [
+        "node_modules/tslib/tslib.d.ts"
+      ]
+    },
+    "baseUrl":"."
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
